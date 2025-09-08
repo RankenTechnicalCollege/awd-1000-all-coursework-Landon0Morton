@@ -1,0 +1,117 @@
+/*
+	Student Name: Landon Morton
+	File Name: style.css
+	Date: 9/8/25
+*/
+
+/*CSS Reset*/
+
+body, header, nav, main, footer, img, h1, h3 { 
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/*Style rule for body and image*/
+
+body{
+  background-color: #e3eaf8;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/*Style rule for header content*/
+
+header, h1 { 
+  text-align: center;
+  font-size: 3em;
+  font-family: Georgia, Times, Serif;
+  padding: 3%;
+  color:#101a2d
+}
+
+/*Style rule for nav content*/
+
+nav {
+  background-color: #1d396d;
+}
+
+nav, ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav, li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+}
+
+nav, li, a {
+  display: block;
+  color: #e3eaf8;
+  font-weight: bold;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+}
+
+/*Style rules for main content*/
+
+main {
+  padding: 2%;
+  font-family: Geneva, Arial, Sans-Serif;
+  overflow: auto;
+}
+
+main, p {
+  font-size: 1.25em;
+}
+
+main, h3 {
+  padding-top: 2%;
+  font-size: 2em;
+}
+
+image {
+  width: 45%;
+  float: left;
+  padding: 1%;
+}
+
+#group {
+  width: 45%;
+  float: right;
+}
+
+.external {
+  color: #1d396d;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*Style rules for footer content*/
+
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #1d396d;
+  color: #e3eaf8;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
+footer, a {
+  color:#e3eaf8;
+  text-decoration: none;
+}
