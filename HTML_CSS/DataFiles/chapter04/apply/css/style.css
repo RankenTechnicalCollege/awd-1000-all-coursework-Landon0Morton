@@ -1,7 +1,7 @@
 /*
 	Student Name: Landon Morton
 	File Name: style.css
-	Date: 9/8/25
+	Date: 9/9/25
 */
 
 /*CSS Reset*/
@@ -14,23 +14,23 @@ body, header, nav, main, footer, img, h1, h3 {
 
 /*Style rule for body and image*/
 
-body{
+body {
   background-color: #e3eaf8;
 }
 
-img{
+img {
   max-width: 100%;
   display: block;
 }
 
 /*Style rule for header content*/
 
-header, h1 { 
+header h1 { 
   text-align: center;
   font-size: 3em;
   font-family: Georgia, Times, Serif;
   padding: 3%;
-  color:#101a2d
+  color:#101a2d;
 }
 
 /*Style rule for nav content*/
@@ -39,20 +39,20 @@ nav {
   background-color: #1d396d;
 }
 
-nav, ul {
+nav ul {
   list-style: none;
   margin: 0;
   text-align: center;
 }
 
-nav, li {
+nav li {
   display: inline-block;
   font-size: 1.5em;
   font-family: Verdana, Arial, sans-serif;
   font-weight: bold;
 }
 
-nav, li, a {
+nav li a {
   display: block;
   color: #e3eaf8;
   font-weight: bold;
@@ -71,16 +71,16 @@ main {
   overflow: auto;
 }
 
-main, p {
+main p {
   font-size: 1.25em;
 }
 
-main, h3 {
+main h3 {
   padding-top: 2%;
   font-size: 2em;
 }
 
-image {
+#image {
   width: 45%;
   float: left;
   padding: 1%;
@@ -111,7 +111,7 @@ footer {
   padding-left: 0%;
 }
 
-footer, a {
+footer a {
   color:#e3eaf8;
   text-decoration: none;
 }
