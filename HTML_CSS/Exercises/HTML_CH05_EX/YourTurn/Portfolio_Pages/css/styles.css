@@ -1,0 +1,146 @@
+/*
+  Student Name: Landon Morton
+  File Name: styles.css
+  Date: 9/16/25
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, img, h1, h3, h4, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body {
+  background-color: darkblue;
+  align-content: center;
+}
+
+/* Style rules for header */
+header {
+  background-color: lightslategray;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
+}
+
+h1 {
+  color: darkred; 
+}
+
+h3 {
+  color: darkred;
+}
+
+/* Style rules for nav */
+nav {
+  margin: 2em;
+  padding: 10px;
+  background-color: lightslategray;
+  text-align: center;
+  display: inline-block;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 3%;
+}
+
+nav ul li a {
+  font-style: normal;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Style rules for main */
+main {
+  background-color: lightslategray;
+  text-align: center;
+  margin: 3%;
+}
+
+main p {
+  font-family:'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+
+main div ul {
+  list-style: none;
+  text-align:center;
+}
+
+main div ul li {
+  text-align: center;
+}
+
+main p a {
+  text-decoration: none;
+}
+
+/* Style rules for footer */
+
+footer {
+  margin: 3%;
+  background-color: lightslategray; 
+  text-align: center;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+/* Style rules for images */
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Style rules for desktop 
+@media screen and (min-width: 768px) {
+  nav ul li {
+    display: inline;
+    margin: 0;
+  }
+  nav {
+    display: block;
+  }
+
+  main iframe {
+  height: 400px;
+  width: 500px;
+  }
+
+}
+*/
+
+/* Style rules for class and id selectors */
+.box {
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border-radius: 12px;
+  background-color: black;
+}
+
+#About {
+  margin: 2%;
+  padding: 0%;
+  background-color: lightslategray;
+  text-decoration: none;
+  text-align: center;
+  color: brown;
+}
+
+#container {
+  padding-bottom: 50px;
+}
