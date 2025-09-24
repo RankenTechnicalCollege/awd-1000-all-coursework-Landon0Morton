@@ -1,0 +1,66 @@
+/*
+Author: Landon Morton
+Date: 9/24/25
+File Name: apply08.css
+*/
+
+/* CSS Reset */
+body, main, footer, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #f4f9e1;
+}
+
+/* Style rule for the container */
+#container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+/* Style rules for table */
+table {
+	width: 80%;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #71881b;
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+/* Style rules for table rows */
+table tr {
+	border-collapse: collapse;
+	padding: 2%;
+}
+
+tr:nth-child(odd) {
+	background-color: #d3e788;
+}
+
+/* Style rules for table row headers */
+table tr th {
+	border-collapse: collapse;
+	padding: 2%;
+	border: 1px solid #71881b;
+}
+
+/* Style rules for table row data */
+table tr td {
+	border-collapse: collapse;
+	padding: 2%;
+	border: 1px solid #71881b;
+	text-align: center;
+}
