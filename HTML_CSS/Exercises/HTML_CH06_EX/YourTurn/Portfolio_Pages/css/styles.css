@@ -1,0 +1,207 @@
+/*
+  Student Name: Landon Morton
+  File Name: styles.css
+  Date: 9/23/25
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, img, h1, h3, h4, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body {
+  background: linear-gradient(to bottom, #00008b 78%, #fff);
+  align-content: center;
+}
+
+/* Style rules for header */
+header {
+  background-color: lightslategray;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  margin: 30px;
+  padding: 30px;
+  margin-bottom: 3%;
+}
+
+h1 {
+  color: darkred; 
+}
+
+h3 {
+  color: darkred;
+}
+
+/* Style rules for nav */
+nav {
+  margin-top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 0;
+  padding: 10px;
+  background-color: lightslategray;
+  text-align: center;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: block;
+  margin: 3%;
+  padding: 1%;
+}
+
+nav ul li a {
+  font-style: normal;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 120%;
+  border-radius: 12px;
+  background-color: black;
+  padding: 2%;
+}
+
+/* Style rules for main */
+main {
+  background-color: lightslategray;
+  text-align: center;
+  margin: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+main p {
+  font-family:'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+
+main div ul {
+  list-style: none;
+  text-align:center;
+}
+
+main div ul li {
+  text-align: center;
+}
+
+main p a {
+  text-decoration: none;
+}
+
+/* Style rules for footer */
+
+footer {
+  margin: 3%;
+  background-color: lightslategray; 
+  text-align: center;
+  color: aliceblue;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+/* Style rules for images */
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Style rules for class and id selectors */
+
+#About {
+  margin: 2%;
+  padding: 0%;
+  background-color: lightslategray;
+  text-decoration: none;
+  text-align: center;
+  color: brown;
+}
+
+#container {
+  padding-bottom: 50px;
+}
+
+/* Style Rules for Pseudo code */
+
+/* Style rules for Tablet Viewport */
+@media screen and (min-width:600px), print {
+  /* Style rules for body */
+  body {
+    background: linear-gradient(to bottom, #00008b 76%, #fff);
+    margin: 7%;
+    font-size: 140%;
+    vertical-align: middle;
+  }
+
+  /* Style rules for nav */
+  nav {
+    padding: 30px;
+    margin-top: 3%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    border-radius: 12px;
+    background-color: black;
+    padding: 2%;
+    margin: 0;
+  }
+
+  nav ul li a {
+   background-color: unset;
+  }
+
+  /* Style rules for main */
+  main {
+    font-size: 150%;
+    margin-top: 8%;
+    padding: 2%
+  }
+
+  main iframe {
+  height: 400px;
+  width: 450px;
+  }
+
+  /* Style rules for footer */
+  footer {
+    margin-top: 8%;
+  }
+}
+
+/* Style rules for Desktop Viewport */
+@media screen and (min-width: 900px), print {
+  /* Style rules for body */
+  body {
+    background: linear-gradient(to bottom, #00008b 74%, #fff);
+  }
+
+  /* Style rules for nav */
+  nav ul li {
+    display: inline;
+    margin: 0;
+  }
+
+  /* Style rules for main */
+  main iframe {
+  height: 400px;
+  width: 550px;
+  }
+
+  /* Style Rules for Pseudo code */
+  a:hover {
+    color: red;
+  }
+
+}
