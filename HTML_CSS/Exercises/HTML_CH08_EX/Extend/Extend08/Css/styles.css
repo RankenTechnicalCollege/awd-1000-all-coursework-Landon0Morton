@@ -1,0 +1,72 @@
+/* Landon Morton
+   9/24/25
+   styles.css
+*/
+
+/* Css Reset */
+body, header, nav, main, footer, table, thead, tbody, tr, th, td {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body style rules */
+body {
+  background-color: #ffe5dc;
+  font-family: sans-serif;
+}
+
+/* Main style rules */
+main {
+  align-content: center;
+}
+
+/* Table style rules */
+table {
+  border: 7px solid #fd4d0c;
+  box-shadow: 15px 15px 12px #792101;
+  width: 80%;
+  margin: 8%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+caption {
+  color: #792101;
+  font-size: xx-large;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-bottom: 3%;
+  font-weight: bold;
+}
+
+thead {
+  background-color: #792101;
+  color: aliceblue;
+}
+
+tbody {
+  text-align: left;
+}
+
+th {
+  padding: 2%;
+  border-bottom: 1px solid #ffe5dc;
+  border-left: 1px solid #ffe5dc;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fe9772;
+}
+
+td {
+  padding: 2%;
+  border-left: 1px solid #792101;
+  border-bottom: 1px solid #792101;
+}
+
+/* Footer style rules */
+footer {
+  text-align: center;
+}
