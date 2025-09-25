@@ -1,0 +1,205 @@
+/* Created By: Landon Morton
+   Date: 9/24/25
+   File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, section, img, p, h1, h2, h3, h4, .description, .menu-item, #menu-preview, #about, #hero, #location, #contact, ul, li, a, span, iframe {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style Rules for Body */
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #F4F4F4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style Rules for Header */
+header {
+  background-color: darksalmon;
+  color: darkolivegreen;
+  padding: 2%;
+  margin-bottom: 1%;
+  text-align: center;
+
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+/* Style Rules for Nav */
+nav { 
+  align-content: center;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 1%;
+  border-top: 1px solid darkgrey;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  background: black;
+  padding: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+nav ul li a  {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em
+}
+
+/* Style Rules for Main */
+main {
+  margin: 2%;
+  padding: 3%;
+  align-content: center;
+}
+
+section {
+  margin: 10%;
+}
+
+/* Style Rules for  Hero Section */
+#hero {
+  background-image: url("/images/hero.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  padding: 7%;
+  margin: 3%;
+  color: white;
+  text-align: center;
+}
+
+#hero h2 {
+  font-size: 5em;
+  margin-top: 0;
+}
+
+#hero p {
+  font-size: 1.7em;
+  margin-top: 40%;
+}
+
+/* Style Rules for About Section */
+#about {
+margin: 3%;
+padding: 3%;
+width: 80%;
+text-align: right;
+display: block;
+}
+
+#about img {
+  float: left;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 12%;
+}
+
+#about p {
+  text-align: center;
+  margin-top: 3%;
+  margin-right: 16%;
+  padding: 1%;
+}
+
+#about h2 {
+  text-align: center;
+  margin-top: 3%;
+  margin-right: 16%;
+  padding: 1%;
+  font-size: larger;
+}
+
+
+/* Style Rules for Menu Section */
+#menu-preview {
+  clear: both;
+  text-align: center;
+  width: 80%;
+  background-color: beige;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 3%;
+  display: block;
+}
+
+#menu-preview h3 {
+  font-size: 1.5em;
+}
+
+#menu-preview h4 {
+  background-color: darkgrey;
+  width: 30%;
+  margin: auto; 
+  padding: 2%;
+}
+#menu-preview .menu-item {
+  margin-top: 7%;
+
+}
+
+#menu-preview .menu-item .description {
+  border: 1px solid grey;
+  margin-top: 1%;
+  padding: 5%;
+}
+
+#menu-preview .menu-item p span {
+  color: aliceblue;
+  background-color: darkblue;
+  padding: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-weight: bold;
+}
+
+/* Style Rules for Location Section */
+#location {
+  width: 80%;
+  text-align: center;
+  margin: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#location iframe {
+  width: 80%;
+  height: 350px;
+}
+
+#location h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Style Rules for Contact Section */
+#contact {
+  text-align: center;
+  width: 80%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Style Rules for Footer */
+footer {
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+  padding: 3%;
+}
+
