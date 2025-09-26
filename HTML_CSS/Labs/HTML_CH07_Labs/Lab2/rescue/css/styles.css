@@ -1,0 +1,296 @@
+/*
+  Author: Landon Morton
+  File Name: Styles.css
+  Date: 9/26/25
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h3 , ul, aside, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body and images */
+body {
+  background-color: #f6eee4;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+  display: block;
+}
+
+.mobile h1{
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h3 {
+  padding: 2%;
+  text-align: center;
+}
+
+.mobile h1 .emblema-one-regular {
+  font-family: "Emblema One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mobile h3 .lora-yay {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tab-desk {
+  visibility: hidden;
+}
+
+/* Style rules for header area */
+
+
+/* Style rules for navigation area */
+nav {
+  background-color: #2a1f14;
+}
+
+nav ul {
+  list-style: none;
+  display: block;
+  text-align: center;
+  border-style: solid;
+  border-width: 0.5px;
+  border-color: #f6eee4;
+}
+
+nav li {
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, Sans-Serif;
+  font-weight: bold;
+}
+
+nav li a {
+  display: block;
+  color: #f6eee4;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-decoration: none;
+}
+
+/* Style rules for main content */
+main {
+  padding: 2%;
+  font-family: Verdana,Arial,Sans-serif;
+}
+
+main .lora-yay {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+main p {
+  font-size: 1.25em;
+}
+
+main h3 {
+  padding-top: 2%;
+}
+
+main ul {
+  list-style-type: square;
+}
+
+.link {
+  color: #4d3319;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.action {
+  font-size: 1.75em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.round {
+  border-radius: 6px;
+}
+
+aside {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 4px 4px 10px #c5a687;  
+}
+
+figure {
+  border: 4px solid #2a1f14;
+  box-shadow: 6px 6px 10px #c5a687;
+  max-width: 400px;
+  margin: 2% auto;
+}
+
+figcaption {
+  padding: 2%;
+  border-top: 4px solid #2a1f14;
+}
+
+#info ul {
+  margin-left: 10%;
+}
+
+#contact {
+  text-align: center;
+}
+
+.tel-link {
+  background-color: #2a1f14;
+  padding: 2%;
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.tel-link a {
+  color: #f6eee4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Style rules for footer content */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  background-color: #2a1f14;
+  color: #f6eee4;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-right: 0%;
+  padding-left: 0%; 
+}
+
+footer a {
+  color: #f3e6d8;
+  text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width:620px), print {
+  /* Tablet Viewport: Show tab-desk class, hide mobile class */
+  .mobile {
+    display: none;
+  }
+
+  .tab-desk {
+    visibility: visible;
+    display: block;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+    
+  aside {
+    grid-column: 1 / span 2;
+  }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+    display: inline-block;
+    font-size: 1.25em;
+    border-top: none;
+  }
+
+  nav li a {
+    padding: 0.5em;
+  }
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width:1000px), print {
+  /* Desktop Viewport: Style rules for nav area */
+  nav li {
+    font-size: 1.5em;
+  }
+
+  nav li a {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  nav li a:hover {
+    color: #2a1f14;
+    background-color: #f6eee4;
+  }
+
+  /* Desktop Viewport: Style rules for main content */
+  #info ul {
+    margin-left: 5%;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  aside {
+    grid-column: 1 / span 3;
+    font-size: 2em;
+  }
+}
+
+/* Media Query for Large Desktop Viewport */
+@media screen and (min-width:1921px), print {
+  body {
+    background: linear-gradient(#f6eee4, #78593a)
+  }
+
+  #wrapper {
+    width: 1920px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  main {
+    background-color: #f6eee4;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  aside {
+    grid-column: 1 / span 4;
+    font-size: 3em;
+  }
+}
+
+/* Media Query for Print */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+}
