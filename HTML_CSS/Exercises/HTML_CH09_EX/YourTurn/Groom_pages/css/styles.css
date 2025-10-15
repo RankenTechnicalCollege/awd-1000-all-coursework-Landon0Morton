@@ -1,11 +1,11 @@
 /*
   Student Name: Landon Morton
   File Name: styles.css
-  Date: 10/8/25
+  Date: 10/15/25
 */
 
 /* CSS Reset */
-body, header, nav, main, footer, article, section, aside, div, img, h1, h2, h3, h4, p, ul, li, a, table, caption, tr, th, td, form, fieldset, label, legend, input, button {
+body, header, nav, main, footer, article, section, aside, div, img, h1, h2, h3, h4, p, ul, li, a, table, caption, tr, th, td, form, fieldset, label, legend, input, button, ::-webkit-validation-bubble-text-block {
   margin: 0;
   padding: 0;
   border: 0;
@@ -218,7 +218,7 @@ footer {
 }
 
 /* Style rules for images */
-img {
+img, video {
   max-width: 100%;
   display: inline-block;
 }
