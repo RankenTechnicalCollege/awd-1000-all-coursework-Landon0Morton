@@ -1,0 +1,775 @@
+/*
+  Student Name: Landon Morton
+  File Name: styles.css
+  Date: 10/15/25
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, div, img, h1, h3, h4, p, ul, li, a, aside, article, section, figure, figcaption, table, tr, th, td, caption, form, fieldset, legend {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body, .bg-dark-green {
+  background-color: #304930;
+  align-content: center;
+  font-size: 1em;
+}
+
+/* Style rules for header */
+header {
+  background-color: rgb(133, 81, 32);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  max-width: 95%;
+  margin: 3%;
+  padding: 1%;
+}
+
+header h1 {
+  color: rgb(255, 122, 122); 
+}
+
+/* Style rules for nav */
+nav {
+  max-height: fit-content;
+  max-width: 95%;
+  margin-top: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  padding: 3%;
+  background-color: rgba(133, 81, 32, 0.9);
+  text-align: center;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -5px;
+}
+
+.nav {
+  max-height: fit-content;
+  max-width: 95%;
+  margin-top: 0;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-bottom: 3%;
+  padding: 3%;
+  background-color: rgba(133, 81, 32, 0.9);
+  text-align: right;
+  display: block;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -5px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li, .nav-item{
+  grid-column: auto;
+  display: inline;
+  margin: 0;
+  padding: 1%;
+}
+
+nav ul li a, .nav-link {
+  display: inline;
+  font-style: normal;
+  font-weight: bold;
+  text-decoration: none;
+  color: aliceblue;
+  border-radius: 12px;
+  background-color: black;
+  font-size: 1em;
+  padding-left: 25%;
+  padding-right: 25%;
+  margin: 0;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+/* Style rules for main */
+main {
+  background-color: rgb(133, 81, 32);
+  text-align: center;
+  padding-top: 1%;
+  margin-right: 3%;
+  margin-left: 3%;
+}
+
+main h1 {
+  color: rgb(255, 122, 122);
+}
+
+main p {
+  font-family:'Times New Roman', Times, serif;
+  color: aliceblue;
+}
+
+main p a {
+  text-decoration: none;
+}
+
+/* Style rules for article */
+section {
+  margin-top: 4%;
+}
+
+section p {
+  margin-top: 4%;
+}
+
+section ul {
+  list-style: none;
+}
+
+aside {
+  margin-top: 4%;
+}
+
+aside ul {
+  list-style: none;
+}
+
+/* Style rules for Figure */
+figure {
+  color: rgb(255, 122, 122);
+  font-weight: bold;
+}
+
+/* Style rules for form */
+form {
+  width: 98%;
+  display: block;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+form fieldset {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  border: 1px solid black;
+  background-color: rgb(167, 99, 36);
+}
+
+form label {
+  display:  block;
+  font-weight: bold;
+  margin-top: 3%;
+  background-color: #304930;
+  color: aliceblue;
+  border: 1px solid black;
+}
+
+form fieldset legend {
+  display: block;
+  ;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: #304930;
+  color: aliceblue;
+  border: 1px solid black;
+}
+
+form button {
+  padding: 2%;
+  font-size: 1.1em;
+  margin-top: 3%;
+}
+
+
+
+/* Style rules for footer */
+
+footer {
+  margin-top: 8%;
+  margin-bottom: 0;
+  background-color: lightslategray; 
+  text-align: center;
+  color: aliceblue;
+  padding: 1%;
+  font-size: 0.7em;
+}
+
+footer p a {
+  text-decoration: none;
+}
+
+/* Style rules for images */
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Style rules for class and id selectors */
+#About {
+  margin: 2%;
+  padding: 0%;
+  background-color: rgb(133, 81, 32);
+  text-decoration: none;
+  text-align: center;
+  color: aliceblue;
+  text-shadow: 3px 1px darkred;
+}
+
+#container {
+  padding-bottom: 50px;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.bigger {
+  color: aliceblue;
+  background-color: rgb(82, 30, 6);
+  font-size: 1.5em;
+}
+
+/* This shows the Mobile class, and hides the Tab-desk class */
+.Tab-Desk {
+  visibility: hidden;
+  display: none;
+}
+
+.mobile {
+  display: block;
+  font-size: 0.75em;
+  margin-bottom: 3%; 
+}
+
+/* Style Rules for Pseudo code */
+a:hover {
+  color: red;
+  background-color: white;
+}
+
+/* Style rules for Tablet Viewport */
+@media screen and (min-width:600px), print {
+  /* Style rules for body */
+  body {
+    background: linear-gradient(to bottom, rgb(48, 73, 48) 76%, #fff);
+    background-size: cover;
+    vertical-align: middle;
+  }
+
+  /* Style rules for Header */
+  header h1 {
+    font-size: 3.7em;
+  }
+
+  header figure figcaption {
+    font-size: 2em;
+  }
+
+  /* Style rules for nav */
+  nav {
+    background-color:rgb(133, 81, 32);
+  }
+
+  nav ul li {
+    display: inline;
+    border-radius: 12px;
+    padding: 2%;
+    margin: 0;
+  }
+
+   nav ul li a  {
+   font-size: 1.8em;
+  }
+
+  /* Style rules for main */
+  main {
+    margin-top: 8%;
+    padding: 2%
+  }
+
+  main p {
+    font-size: 1.8em
+  }
+
+  main h1 {
+    font-size: 4.5em;
+  }
+
+  main iframe {
+    height: 400px;
+    width: 450px;
+  }
+
+  /* style rules for article */
+  article {
+    grid-column: 1 / span 2;
+  }
+
+  section {
+    grid-column: auto;
+  }
+
+  section p {
+    font-size: 1.8em;
+  }
+
+  section h4 {
+    font-size: 1.8em;
+  }
+  
+  section ul li {
+    font-size: 1.8em;
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+    font-size: 1.8em;
+  }
+
+  /* Style rules for footer */
+  footer {
+    font-size: 1.5em;
+  }
+
+  /* Style rules for ID and class selectors */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  /* Style rules for form */
+  form {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid black;
+    background-color: rgb(167, 99, 36);
+  }
+
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 1.5em;
+    border: 1px solid black;
+    background-color: #304930;
+    color: aliceblue;
+  }
+
+  form fieldset legend {
+    display: block;
+    font-weight: bold;
+    font-size: 1.7em;
+    background-color: #304930;
+    color: aliceblue;
+    border: 1px solid black;
+    margin-bottom: 2%;
+  }
+
+  form button {
+    padding: 3%;
+    font-size: 1.5em;
+    margin-top: 3%;
+  }
+
+  .section1 {
+    grid-column: auto;
+  }
+
+  .section2 {
+    grid-column: auto;
+  }
+
+  /* This shows the Table element, and hides the Mobile class */
+  .Tab-Desk {
+    visibility: visible;
+    display: table;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /* Style rules for Table */
+  table {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    border: 5px solid black;
+    border-collapse: collapse;
+  }
+
+  caption {
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 122, 122);
+    font-weight: bold;
+  }
+
+  table tr {
+    background-color: rgb(167, 99, 36);
+  }
+
+  table tr th {
+    color: aliceblue;
+    background-color: rgb(82, 30, 6);
+    font-size: 1.3em;
+    padding: 3%;
+    border-bottom: 10px solid #304930;
+    border-right: 5px solid black;
+  }
+
+  table tr td {
+    font-size: 0.6em;
+    padding: 3%;
+    border: 1px solid black;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(202, 125, 52);
+  }
+}
+
+/* Style rules for Desktop Viewport */
+@media screen and (min-width: 900px), print {
+  /* Style rules for body */
+  body {
+    background: linear-gradient(to bottom, rgb(48, 73, 48) 74%, #fff);
+  }
+
+  /* Style rules for Header */
+  header {
+    background: radial-gradient(circle at center, rgba(133, 81, 32, 0.9) 50%, rgb(48, 73, 48) );
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  header h1 {
+    font-size: 4em;
+  }
+
+  header figure figcaption {
+    font-size: 1.8em;
+  }
+
+  /* Style rules for nav */
+  nav {
+    background: radial-gradient(circle at center, rgba(133, 81, 32, 0.9) 87%, rgb(48, 73, 48) );
+  }
+
+  nav ul li {
+    display: inline;
+
+  }
+
+  nav ul li a {
+    padding: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.8em;
+  }
+
+  .nav-grid {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  /* Style rules for main */
+  main iframe {
+    height: 400px;
+    width: 550px;
+  }
+
+  /* Style rules for Article */
+  #aboutheading {
+    font-size: 3.5em;
+  }
+
+   section p {
+    font-size: 1.8em;
+  }
+
+  section h4 {
+    font-size: 1.8em;
+  }
+  
+  section ul li {
+    font-size: 1.8em;
+  }
+
+  aside {
+    font-size: 1.8em;
+  }
+
+  /* Style rules for Table */
+  table {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    border: 5px solid black;
+    border-collapse: collapse;
+  }
+
+  caption {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(255, 122, 122);
+    font-weight: bold;
+  }
+
+  table tr {
+    background-color: rgb(167, 99, 36);
+  }
+
+  table tr th {
+    color: aliceblue;
+    background-color: rgb(82, 30, 6);
+    font-size: 1.9em;
+    padding: 3%;
+    border-bottom: 10px solid #304930;
+    border-right: 5px solid black;
+  }
+
+  table tr td {
+    font-size: 0.8em;
+    padding: 3%;
+    border: 1px solid black;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(202, 125, 52);
+  }
+
+    /* Style rules for form */
+  form {
+    width: 80%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid black;
+    background-color: rgb(167, 99, 36);
+  }
+
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 1.5em;
+    border: 1px solid black;
+  }
+
+  form fieldset legend {
+    display: block;
+    font-weight: bold;
+    font-size: 1.7em;
+  }
+
+  form button {
+    padding: 3%;
+    font-size: 1.5em;
+    margin-top: 3%;
+  }
+
+  .section1 {
+    grid-column: auto;
+  }
+
+  .section2 {
+    grid-column: auto;
+  }
+
+}
+
+/* Style rules for Large Desktop Viewport */
+@media screen and (min-width: 1200px), print {
+  /* Style rules for body */
+  body {
+    background: linear-gradient(to bottom, rgb(48, 73, 48) 72%, #fff);
+  }
+
+  /* Style rules for Header */
+  header {
+    background: radial-gradient(circle at center, rgba(133, 81, 32, 0.9) 40%, rgb(48, 73, 48) );
+  }
+
+   header h1 {
+    font-size: 4em;
+  }
+
+  header figure figcaption {
+    font-size: 1.8em;
+  }
+
+  /* Style rules for nav */
+  nav {
+    background: radial-gradient(circle at center, rgba(133, 81, 32, 0.9) 83%, rgb(48, 73, 48) );
+  }
+
+  nav ul li {
+    display: inline;
+  }
+
+  nav ul li a {
+    padding: 7%;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 2.2em;
+  }
+
+  /* Style rules for main */
+  main iframe {
+    height: 500px;
+    width: 650px;
+  }
+
+  /* Style rules for Article */
+  #aboutheading {
+    font-size: 5em;
+  }
+
+  section p {
+    font-size: 2em;
+  }
+
+  section h4 {
+    font-size: 2em;
+  }
+
+  section ul li {
+    font-size: 2em;
+  }
+
+  aside {
+    font-size: 2em;
+  }
+
+  .nav-grid {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  /* Style rules for Table */
+  table {
+    margin-left: 1%;
+    margin-right: 1%;
+    text-align: center;
+    border: 5px solid black;
+    border-collapse: collapse;
+  }
+
+  caption {
+    text-align: center;
+    font-size: 4em;
+    color: rgb(255, 122, 122);
+    font-weight: bold;
+  }
+
+  table tr {
+    background-color: rgb(167, 99, 36);
+  }
+
+  table tr th {
+    color: aliceblue;
+    background-color: rgb(82, 30, 6);
+    font-size: 2.3em;
+    padding: 3%;
+    border-bottom: 10px solid #304930;
+    border-right: 5px solid black;
+  }
+
+  table tr td {
+    font-size: 1.1em;
+    padding: 3%;
+    border: 1px solid black;
+  }
+
+  tr:nth-child(odd) {
+    background-color: rgb(202, 125, 52);
+  }
+
+    /* Style rules for form */
+  form {
+    width: 90%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  form fieldset {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 1px solid black;
+    background-color: rgb(167, 99, 36);
+  }
+
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 1.7em;
+    background-color: #304930;
+    color: aliceblue;
+  }
+
+  form fieldset legend {
+    display: block;
+    font-weight: bold;
+    font-size: 1.9em;
+    background-color: #304930;
+    color: aliceblue;
+    border: 1px solid black;
+  }
+
+  form button {
+    padding: 3%;
+    font-size: 1.7em;
+    margin-top: 3%;
+  }
+
+  .section1 {
+    grid-column: auto;
+  }
+
+  .section2 {
+    grid-column: auto;
+  }
+
+}
