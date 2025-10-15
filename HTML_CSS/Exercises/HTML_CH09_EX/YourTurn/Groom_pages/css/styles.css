@@ -1,0 +1,505 @@
+/*
+  Student Name: Landon Morton
+  File Name: styles.css
+  Date: 10/8/25
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, article, section, aside, div, img, h1, h2, h3, h4, p, ul, li, a, table, caption, tr, th, td, form, fieldset, label, legend, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body {
+  background-color: darkseagreen;
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+}
+
+a:hover {
+  color: red;
+}
+
+/* Style rules for header */
+header {
+  background-color: brown;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  margin: 2%;
+  padding: 5%;
+  border-radius: 12px;
+}
+
+header h1 {
+  font-size: 1.5em;
+  color: orangered; 
+}
+
+header h3 {
+  color: orangered;
+  font-size: 0.8em;
+}
+
+/* Style rules for nav */
+nav {
+  margin: 1%;
+  padding: 2px;
+  background-color: rgba(165, 42, 42, 80%);
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 0.84em;
+}
+
+nav ul {
+  list-style: none;
+  margin: 1.5%;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-style: normal;
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: 3px 1px black;
+}
+
+.nav-grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 5px;
+  text-align: center;
+}
+
+/* Style rules for main */
+main {
+  background-color: brown;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: aliceblue;
+  margin: 3%;
+  padding: 10px;
+}
+
+main p {
+  font-family:'Times New Roman', Times, serif;
+}
+
+main div ul {
+  list-style: none;
+  text-align:center;
+}
+
+main div ul li {
+  text-align: center;
+}
+
+/* Style rules for article, section, and aside */
+article {
+  margin: 0;
+}
+
+article h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+article p {
+  font-size: 1.2em;
+  margin-top: 1%;
+  margin-bottom: 5%;
+}
+
+section {
+  column-count: 1;
+}
+
+aside {
+  grid-column: 1;
+  color: black;
+  text-align: center;
+  background-color: lightslategray;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+aside p {
+  font-size: 0.8em;
+  margin: 0;
+  padding: 1%;
+}
+
+/* Style rules for Table */
+table {
+  background-color: rgb(102, 51, 0);
+  margin: auto;
+  width: 100%;
+}
+
+caption {
+  background-color: rgb(102, 51, 0);
+  font-size: 1.2em;
+  margin-bottom: 2%;
+}
+
+tr  {
+  width: 100%;
+}
+
+th {
+  background-color: rgb(102, 51, 0);
+  font-size: 0.8em;
+  padding: 1%;
+  border-collapse: collapse;
+}
+
+td {
+  background-color: rgb(201, 133, 66);
+  font-size: 0.6em;
+  color: darkred;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+tr:nth-child(odd) {
+  background-color: rgb(153, 102, 51);
+}
+
+/* Style rules for form */
+form {
+  margin-top: 3%;
+}
+
+fieldset {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+  background-color: rgb(153, 102, 51);
+  border: 1px solid #fff;
+  padding: 3%;
+}
+
+fieldset label {
+  grid-column: auto;
+  background-color: darkgreen;
+  border: 1px solid black;
+  font-size: 0.60em;
+  padding: 3%;
+}
+
+
+legend {
+  font-size: 1.2em;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #fff;
+  background-color: #006400;
+}
+
+button {
+  padding: 3%;
+  margin-top: 3%;
+}
+
+/* Style rules for footer */
+
+footer {
+  margin: 30px;
+  background-color: brown; 
+  text-align: center;
+  color: aliceblue;
+}
+
+/* Style rules for images */
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+img.review {
+  max-width: 100%;
+  height: 150px;
+  display: inline-block;
+}
+
+/* Style rules for class and id selectors */
+.box {
+  margin: 7px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: darkgreen;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+#Important {
+  margin: 20px;
+  padding: 2%;
+  background-color: lightslategray;
+  text-decoration: none;
+  text-align: center;
+  color: darkred;
+  float: none;
+  clear: none;
+}
+
+#container {
+  padding-bottom: 45px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+  text-align: center;
+}
+
+/* Mobile Style Rules */
+@media screen and (max-width:767px){
+  nav {
+    top : -5px;
+  }
+
+  iframe {
+    height: 200px;
+    width: 300px;
+  }
+}
+
+/* Tablet Style Rules */
+@media screen and (min-width: 768px){
+  /* Header Style rules */
+  header h1 {
+    font-size: 3.0em;
+  }
+
+  header h3 {
+    font-size: 1.4em;
+  }
+
+  /* Nav Style rules */
+  nav ul li a{
+    margin-right: 0;
+    margin-left: 0;
+    font-size: 2em;
+  }
+
+  .nav-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    text-align: center;
+  }
+
+  /* Main style rules */
+  main {
+    font-size: 2em;
+  }
+
+  article {
+    font-size: 0.7em
+  }
+
+  article h2 {
+    font-size: 1.4em
+  }
+
+  aside {
+    grid-column: 1 / span 2;
+    font-size: 1.3em;
+  }
+
+  /* Style rules for Table */
+  th {
+    border: 1px solid black;
+  }
+
+  /* Style rules for form */
+  fieldset label {
+    font-size: 0.8em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+
+  /* Footer Style rules */
+  footer {
+    font-size: 2em;
+  }
+
+  .mobile {
+    visibility: hidden;
+    display: none;
+  }
+
+  iframe {
+    height: 450px;
+    width: 600px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-content: center;
+    text-align: center;
+  }
+
+}
+
+/* Desktop Style Rules */
+@media screen and (min-width: 900px){
+  body {
+    background: linear-gradient(to bottom, #8FBC8F 50%, #006400);
+  }
+
+  header h1 {
+    font-size: 4em;
+  }
+
+  header h3 {
+    font-size: 2.2em;
+  }
+
+  nav {
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  nav ul li a{
+    font-size: 1.8em;
+  }
+
+  .nav-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    text-align: center;
+  }
+
+  /* Main Style rules */
+  main {
+    font-size: 2.2em;
+  }
+
+  article {
+    font-size: 0.4em
+  }
+
+  article h2 {
+    font-size: 1.4em
+  }
+
+  aside {
+    grid-column: 1 / span 4;
+    font-size: 1.3em;
+  }
+
+  /* Style rules for Table */
+  caption {
+    font-size: 1.5em;
+  }
+
+  th {
+    border: 1px solid black;
+  }
+
+  /* Style rules for form */
+  fieldset label {
+    font-size: 0.6em;
+    padding: 1%;
+  }
+  button {
+    font-size: 0.5em;
+  }
+
+  /* Footer Style rules */
+  footer {
+    font-size: 1.5em;
+  }
+
+  /* Id/Class Selectors Style rules */
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    align-content: center;
+    text-align: center;
+  }
+}
+
+/* Large Desktop Style Rules */
+@media screen and (min-width: 1200px){
+  body {
+    background: linear-gradient(to bottom, #8FBC8F 60%, #006400);
+  }
+
+  /* Header Style rules */
+  header h1 {
+    font-size: 5em;
+  }
+
+  header h3 {
+    font-size: 2.5em;
+  }
+
+  /* Nav Style rules */
+  nav {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  nav ul li a{
+    font-size: 2.2em;
+  }
+
+  /* Main Style rules */
+  main {
+    font-size: 2.9em;
+  }
+
+   /* Style rules for Table */
+  caption {
+    font-size: 1.6em;
+  }
+
+  th {
+    border: 1px solid black;
+  }
+
+  /* Style rules for form */
+  fieldset label {
+    font-size: 0.8em;
+  }
+
+  button {
+    font-size: 0.7em;
+  }
+
+  /* Footer Style rules */
+  footer {
+    font-size: 2.5em;
+  }
+}
+
+/* Print Style Rules */
+@media print {
+  header {
+    font-size: 1.25em;
+  }
+
+  nav {
+    font-size: 1.25em;
+  }
+}
