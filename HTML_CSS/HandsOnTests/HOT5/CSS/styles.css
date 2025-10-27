@@ -1,0 +1,58 @@
+/*
+  Styles.CSS created by Landon Morton
+  10/27/25
+  The purpose of this style sheet is mostly just for coloring and other small changes.
+*/
+
+.bg-brc-red {
+  background-color: rgba(162, 48, 48, 0.8)
+}
+
+.bg-placeholder {
+  background-color: black;
+}
+
+.orange { 
+  color: #fd7e4f;
+}
+
+.orange-btn { 
+  background-color: #fd7e4f;
+  color: #fff;
+  background-size: cover;
+  padding: 0.5em
+}
+
+.orange-btn:hover {
+  background-color: #f8612a;
+}
+
+.bg-image {
+  background-image: url(../Images/running-guy.jfif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: 0;
+}
+
+.bg-vid {
+  background-image: url(../Videos/running-vid.gif);
+  background-size: cover;
+  background-position: 0;
+}
+
+.bg-black-see-through {
+  background-color: rgba(0, 0, 0, 75%);
+}
+
+.map {
+  width: 100%;
+  height: 500px
+}
+
+ul {
+  list-style: circle;
+}
+
+ul .remove-circle {
+  list-style-type: none;
+}
