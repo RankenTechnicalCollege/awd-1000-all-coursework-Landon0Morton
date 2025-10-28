@@ -1,9 +1,21 @@
 /*
   Styles.CSS created by Landon Morton
-  10/27/25
+  10/28/25
   The purpose of this style sheet is mostly just for coloring and other small changes.
 */
 
+/* List changes */
+ul {
+  list-style: circle;
+}
+
+ul .remove-circle {
+  list-style-type: none;
+}
+
+/* Nav Changes */
+
+/* Classes and Id's */
 .bg-brc-red {
   background-color: rgba(162, 48, 48, 0.8)
 }
@@ -41,7 +53,7 @@
 }
 
 .bg-black-see-through {
-  background-color: rgba(0, 0, 0, 75%);
+  background-color: rgba(0, 0, 0, 85%);
 }
 
 .map {
@@ -49,10 +61,32 @@
   height: 500px
 }
 
-ul {
-  list-style: circle;
+.bigger-font {
+  font-size: 1.3em;
+  font-weight: bolder;
 }
 
-ul .remove-circle {
-  list-style-type: none;
+/* Mobile Font Size */
+@media screen and (min-width: 0px) {
+  nav, header, main {
+    font-size: 0.7em;
+  }
+}
+
+/* Tablet Font Size */
+@media screen and (min-width: 768px) {
+  nav, header, main {
+    font-size: 1.2em;
+  }
+}
+
+/* Desktop Font Size */
+@media screen and (min-width: 900px) {
+  nav, header, main {
+    font-size: 1.4em;
+  }
+
+  .tiers-smaller {
+    font-size: 0.7em;
+  }
 }

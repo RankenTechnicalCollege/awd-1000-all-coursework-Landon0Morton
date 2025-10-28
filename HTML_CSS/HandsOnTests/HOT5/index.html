@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- Landon Morton, Midterm, 10/27/25 -->
-<html lang="ar" dir="ltr">
+<!-- Landon Morton, Midterm, 10/28/25 -->
+<html lang="en" dir="ltr">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -11,21 +11,30 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css" integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW" crossorigin="anonymous">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
     <title>Belleville Running Club - A group of runners and walkers in Belleville, Illinois</title>
   </head>
   <body>
-    <div class="container-fluid mg-0">
 
-      <nav class="navbar navbar-expand-md navbar-light bg-brc-red navbar-sticky">
+      <nav class="navbar navbar-expand-md navbar-light bg-brc-red sticky-top">
         <div class="container-fluid">
-          <a class="navbar-brand fw-bolder fs-2 fs-lg-1 text-white" href="">Belleville <span class="orange">Running</span> Club</a>
+          <a class="navbar-brand fw-bolder fs-2 text-white" href="">Belleville <span class="orange">Running</span> Club</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="">Home</a>
+              <li class="nav-item mobile-font m-auto ps-lg-5 pe-lg-5">
+                <a class="nav-link text-center text-white ps-lg-4" aria-current="page" href="#HEADER" id="HOME-link">HOME</a>
+              </li>
+              <li class="nav-item mobile-font m-auto ps-lg-5">
+                <a class="nav-link text-white text-center ps-lg-5" aria-current="page" href="#WGR" id="WGR-link">WEEKLY GROUP RUNS</a>
+              </li>
+              <li class="nav-item orange-btn mobile-font m-auto">
+                <a class="nav-link text-white p-0 text-center" aria-current="page" href="#COUCH-2-5K" id="C25K-link">COUCH 2 5K TRAINING</a>
               </li>
             </ul>
           </div>
@@ -33,12 +42,12 @@
       </nav>
 
       <div class="bg-vid mg-0">
-        <header class="text-center jumbotron jumbotron-fluid bg-black-see-through text-white mg-0 p-md-5">
+        <header class="text-center jumbotron jumbotron-fluid bg-black-see-through text-white mg-0 p-md-5" id="HEADER">
           <h4>A CLUB OF RUNNERS IN BELLEVILLE, ILLINOIS</h4>
           <h1 class="fw-bolder">RUNNING IS EASIER IN A <span class="orange">CLUB!</span></h1>
-          <button class="btn-primary orange-btn mb-3" type="button" href="https://runsignup.com/MemberOrg/BellevilleRunningClub/Register" target="_blank">JOIN OR RENEW YOUR BRC MEMBERSHIP</span></button>
+          <a href="https://runsignup.com/MemberOrg/BellevilleRunningClub/Register" target="_blank"><button class="btn-primary orange-btn mb-3" type="button">JOIN OR RENEW YOUR BRC MEMBERSHIP</button></a>
           <br>
-          <button class="btn-primary orange-btn" type="button" href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club" target="_blank">BUY BRC GEAR</button>
+          <a href="https://teamlocker.squadlocker.com/#/lockers/belleville-running-club" target="_blank"><button class="btn-primary orange-btn" type="button">BUY BRC GEAR</button></a>
           <div class="p-md-5">
             <h3 class="heading">Membership benefits include:</h3>
             <ul class="list">
@@ -52,7 +61,7 @@
         </header>
       </div>
       <main>
-        <article class="mb-5" id="Weekly-Group-Runs">
+        <article class="mb-5" id="WGR">
           <div class="container">
             <div class="row">
               <section class="text-center col-12">
@@ -60,8 +69,8 @@
                 <h4>WE MEET TWICE PER WEEK ON THURSDAY EVENINGS AND SATURDAY MORNINGS.</h4>
               </section>
               <section class="text-center col-12">
-                <h1 class="mb-3"><a href="">LEARN OUR 5 MILE ROUTE</a></h1>
-                <h1><a href="">LEARN OUR 3 MILE ROUTE</a></h1>
+                <h1 class="mb-3"><a href="https://www.strava.com/routes/793981" target="_blank">LEARN OUR 5 MILE ROUTE</a></h1>
+                <h1><a href="https://www.mapmyrun.com/routes/view/10951380" target="_blank">LEARN OUR 3 MILE ROUTE</a></h1>
               </section>
               <section class="text-center col-12 mb-3">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d6243.666369841956!2d-89.982815!3d38.514558!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDMwJzUyLjQiTiA4OcKwNTgnNTMuNSJX!5e0!3m2!1sen!2sus!4v1761316347003!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="BRC map" class="map"></iframe>
@@ -79,7 +88,7 @@
                 </section>
                 <section class="text-center col-6 card border-0">
                     <h5 class="card-header">Saturday Mornings at 8AM CST - 3 &amp; 5 mile options</h5>
-                    <p class="card-text"><a href="">LongStory Coffee</a> - 732 S Illinois St, Belleville, IL 62220</p>
+                    <p class="card-text"><a href="https://www.longstorycoffee.com/" target="_blank">LongStory Coffee</a> - 732 S Illinois St, Belleville, IL 62220</p>
                 </section>
               </div>
             </div>
@@ -87,7 +96,7 @@
 
         <!-- This is the second half of the Main content -->
         <div class="bg-image">
-          <article class="text-center text-white bg-black-see-through p-5 mg-0" id="Couch-2-5k-Training">
+          <article class="text-center text-white bg-black-see-through p-5 mg-0" id="COUCH-2-5K">
             <div class="container p-md-5 p-lg-3">
               <div class="row p-md-5 p-lg-3">
                 <aside>
@@ -96,49 +105,53 @@
                   <p>
                     Start date of February 18th 2025
                     <br>
-                    Trains Individuals to complete the <a href="" target="_blank">Law Day Run</a> in Belleville, Illinois.
+                    Trains Individuals to complete the <a href="http://www.lawdayrun.com/" target="_blank">Law Day Run</a> in Belleville, Illinois.
                     <br>
                     Tuesdays 6 p.m. at Belleville East High School
                     <br>
                     Sundays 10:30 a.m. at Southside Park.
                   </p>
                 </aside>
-                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent">
+                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent tiers-smaller">
                   <h1 class="card-header">Tier 1</h1>
+                  <h3 class="card-header fs-4 border-0">20$</h3>
                   <ul class="list card-text">
                     <li class="list-item">Weekly Group training Sessions</li>
                     <li class="list-item">C25K Completion T-Shirt</li>
-                    <li class="list-item mt-3 remove-circle"><button class="btn-primary orange-btn" type="button">BUY TIER 1</button></li>
+                    <li class="list-item mt-3 remove-circle"><a href="https://square.link/u/6qMNTcN6" target="_blank"><button class="btn-primary orange-btn" type="button">BUY TIER 1</button></a></li>
                   </ul>
                 </section>
-                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent">
+                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent tiers-smaller">
                   <h1 class="card-header">Tier 2</h1>
+                  <h3 class="card-header fs-4 border-0">30$</h3>
                   <ul class="list card-text">
                     <li class="list-item">1 year Belleville Running Club Membership</li>
                     <li class="list-item">Weekly Group Training Sessions</li>
                     <li class="list-item">C25K Completion T-Shirt</li>
-                    <li class="list-item mt-3 remove-circle"><button class="btn-primary orange-btn" type="button">BUY TIER 2</button></li>
+                    <li class="list-item mt-3 remove-circle"><a  href="https://square.link/u/LuYguBmM" target="_blank"><button class="btn-primary orange-btn" type="button">BUY TIER 2</button></a></li>
                   </ul>
                 </section>
-                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent">
+                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent tiers-smaller">
                   <h1 class="card-header">Tier 3</h1>
+                  <h3 class="card-header fs-4 border-0">55$</h3>
                   <ul class="list card-text">
                     <li class="list-item">2025 Law Day 5K Race Entry</li>
                     <li class="list-item">1 year Belleville Running Club Membership</li>
                     <li class="list-item">Weekly Group Training Sessions</li>
                     <li class="list-item">C25K Completion T-Shirt</li>
-                    <li class="list-item mt-3 remove-circle"><button class="btn-primary orange-btn" type="button">BUY TIER 3</button></li>
+                    <li class="list-item mt-3 remove-circle"><a href="https://square.link/u/KPGh3iJK" target="_blank"><button class="btn-primary orange-btn" type="button">BUY TIER 3</button></a></li>
                   </ul>
                 </section>
-                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent">
+                <section class="card col-12 col-lg-3 border-0 mb-3 text-white bg-transparent tiers-smaller">
                   <h1 class="card-header">Tier 4</h1>
+                  <h3 class="card-header fs-4 border-0">75$ (Limited Availability)</h3>
                   <ul class="list card-text">
                     <li class="list-item">Personalized Training Plan</li>
                     <li class="list-item">2025 Law Day 5K Race Entry</li>
                     <li class="list-item">1 year Belleville Running Club Membership</li>
                     <li class="list-item">Weekly Group Training Sessions</li>
                     <li class="list-item">C25K Completion T-Shirt</li>
-                    <li class="list-item mt-3 remove-circle"><button class="btn-primary orange-btn" type="button">BUY TIER 4</button></li>
+                    <li class="list-item mt-3 remove-circle"><a href=" https://square.link/u/Y9eScUl4" target="_blank"><button class="btn-primary orange-btn" type="button">BUY TIER 4</button></a></li>
                   </ul>
                 </section>
               </div>
@@ -149,7 +162,6 @@
       <footer class="jumbotron jumbotron-fluid text-center mt-3 fs-3">
         <p> Copyright &copy; 2025 Belleville Running Club</p>
       </footer>
-    </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
