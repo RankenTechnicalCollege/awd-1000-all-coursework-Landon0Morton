@@ -1,0 +1,109 @@
+/* CSS Reset */
+body, header, nav, main, footer, article, section, aside, div, img, h1, h2, h3, h4, p, ul, li, a, table, caption, tr, th, td, form, fieldset, label, legend, input, button, ::-webkit-validation-bubble-text-block {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Style rules for body */
+body {
+  background-color: darkseagreen;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+a:hover {
+  color: red;
+}
+
+/* Style rules for header */
+header {
+  background-color: brown;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-radius: 12px;
+}
+
+header h1 {
+  color: orangered; 
+}
+
+header h3 {
+  color: orangered;
+}
+
+/* Style rules for nav */
+nav {
+  background-color: rgba(165, 42, 42, 80%);
+  text-align: center;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-style: normal;
+  text-decoration: none;
+  color: aliceblue;
+  text-shadow: 3px 1px black;
+}
+
+.cus-brand {
+  background-color:aliceblue;
+}
+
+/* Style rules for main */
+main {
+  background-color: brown;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  color: aliceblue;
+}
+
+main p {
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Style rules for footer */
+
+footer {
+  background-color: brown; 
+  color: aliceblue;
+}
+
+/* Style rules for images */
+img, video {
+  max-width: 100%;
+  display: inline-block;
+}
+
+/* Style rules for class and id selectors */
+.box {
+  margin: 7px;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-color: darkgreen;
+  display: inline-block;
+  border-radius: 12px;
+}
+
+.text-orange{ 
+  color: orangered;
+}
+
+/* Tablet Style Rules */
+@media screen and (min-width: 768px){
+  .mobile {
+    visibility: none;
+    display: none;
+  }
+}
