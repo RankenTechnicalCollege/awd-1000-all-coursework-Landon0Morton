@@ -14,28 +14,31 @@ let timeId = "";
 
 // Constants to set the time given for the quiz in seconds
 // and the correct answers to each quiz question
-const quizTime = 20;
+const quizTime = 90;
 const correctAnswers = ["10", "4", "-6", "5", "-7"];
 
 // Elements in the quiz page
 let startQuiz = document.getElementById("startquiz");
 let quizClock = document.getElementById("quizclock");
 let overlay = document.getElementById("overlay");
+let totalCorrect = 0;
 
 startQuiz.addEventListener('click', function (){ 
-   overlay.classList = 'showQuiz';
+   overlay.classList = 'showquiz';
    timeId = setInterval(countdown, 1000);
 });
 
 // Countdown Function
 function countdown() {
-   if (timeLeft == 0) {
+   if (timeLeft === 0) {
       totalCorrect = checkAnswers();
+      clearInterval(timeId);
       
-      if (totalCorrect = correctAnswers.length) {
-         window.alert("Congrats on getting 100%!")
+      if (totalCorrect === correctAnswers.length) {
+         window.alert("Congrats on getting 100%!");
+         overlay.classList = 'hidequiz';
       } else {
-         let incorrect = correctAnswers - totalCorrect;
+         let incorrect = correctAnswers.length - totalCorrect;
          window.alert("You got " + incorrect + "/" + correctAnswers.length + " wrong.");
          timeLeft = quizTime;
          quizClock.value = timeLeft;
@@ -54,7 +57,7 @@ let timeLeft = quizTime;
 
 
 // and the node list for questions
-let questionList = document.querySelectorAll('div#quiz, input');
+let questionList = document.querySelectorAll('div#quiz input');
 
 /*------------- Function to check the student answers ----------------*/
 function checkAnswers() {
