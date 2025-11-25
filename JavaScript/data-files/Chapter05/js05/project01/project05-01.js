@@ -5,7 +5,7 @@
 
       Project to present an online quiz with a countdown clock
       Author: Landon Morton
-      Date: 11/24/25
+      Date: 11/25/25
 
       Filename: project05-01.js
 */
@@ -36,6 +36,7 @@ function countdown() {
       
       if (totalCorrect === correctAnswers.length) {
          window.alert("Congrats on getting 100%!");
+         window.alert = function() {};
          overlay.classList = 'hidequiz';
       } else {
          let incorrect = correctAnswers.length - totalCorrect;
