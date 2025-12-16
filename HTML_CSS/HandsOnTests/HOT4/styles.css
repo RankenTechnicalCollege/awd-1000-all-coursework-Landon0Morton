@@ -1,0 +1,52 @@
+/* Card CSS */
+.card-bg1 {
+  background-image: url(images/fritos.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-bg2 {
+  background-image: url(images/ttBites.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-bg3 {
+  background-image: url(images/cheezeItz.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-body {
+  width:400px;
+  height:600px;
+}
+
+.card h5{
+  color: blue;
+  background-color: salmon;
+}
+
+/* Icon CSS*/
+.icon-box {
+  padding: 2% 1%;
+  border-radius: 12px;
+  background: #f8f9fa;
+  transition: all 0.3s ease;
+}
+
+.icon-box i {
+  color: #0d6efd;
+  display: block;
+}
+
+.icon-box:hover {
+  background: #0d6efd;
+  color: #fff;
+  transform: translateY(-5px);
+}
+
+.icon-box:hover i {
+  color: #fff;
+}
